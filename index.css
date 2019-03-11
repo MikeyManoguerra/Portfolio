@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Slabo 27px', serif;
+}
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+ul{
+  height: 55px;
+  background-color: #0080A5;
+  list-style-type: none;
+
+}
+
+li{
+  display: inline;
+}
+
+.nav-item a{
+  display: inline-block;
+  padding : 20px;
+  text-decoration: none;
+  color:#BFA5A4;
+}
+
+div.landing-container{
+  z-index:-1;
+  opacity: 0.5;
+  width: 100%; 
+  margin: auto;
+  height:50%;
+  background:linear-gradient( 
+    rgba(128, 0, 32, 0),
+    #fff),
+    url(https://res.cloudinary.com/dgzjr8afn/image/upload/v1552254300/this-topo.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: fixed;
+  }
+  
+  .title{
+    padding-top: 100px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 0px 15px #574141 ;
+
+}
+
+#main{
+margin-left: auto;
+margin-right: auto;
+margin-bottom:50px;
+padding:20px;
+max-width: 1000px;
+}
+
+.section{
+  margin: 50px 0px 0px;
+}
+
+#project-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'header header'
+  'image image'
+  'stack links';
+  background: linear-gradient( #BFA5A4 , #fff);
+  margin-top:20px;
+  grid-gap: 10px 0px;
+  
+  border-radius: 3px;
+}
+
+.title-description{
+grid-area: header;
+background-color:#574141;
+opacity: .8;
+color:  #FFF4F3;
+text-align: center;
+padding:10px;
+}
+
+.title-description h4{
+  /* text-shadow: 0px 0px 3px #800020; */
+  font-size: 20px;
+
+}
+
+
+.image-container{
+grid-area:  image;
+padding:10px;
+justify-self: center;
+
+}
+.image-container img{
+max-height: 400px;
+max-width: auto;
+
+}
+
+.stack-container{
+grid-area: stack;
+padding:10px;
+
+}
+
+.links-container{
+grid-area: links;
+padding:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.landing-container::after{
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+  margin-top: -800px;
+  height: 800px;
+  width: 100%;
+  content: '';  } */
+
+
