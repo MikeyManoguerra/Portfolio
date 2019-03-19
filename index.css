@@ -26,7 +26,7 @@ li{
   display: inline-block;
   padding : 20px;
   text-decoration: none;
-  color:#BFA5A4;
+  color:white
 }
 
 div.landing-container{
@@ -48,7 +48,7 @@ div.landing-container{
     padding-top: 100px;
     text-align: center;
     color: black;
-    text-shadow: 0px 0px 15px #574141 ;
+    /* text-shadow: 0px 0px 15px #574141 ; */
 
 }
 
@@ -67,8 +67,8 @@ max-width: 1000px;
 #project-container{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 'header header'
+  grid-template-rows: auto auto ;
+  grid-template-areas: 
   'image image'
   'stack links';
   background: linear-gradient( #BFA5A4 , #fff);
@@ -78,38 +78,70 @@ max-width: 1000px;
   border-radius: 3px;
 }
 
-.title-description{
-grid-area: header;
+
+div.image-container{
+  grid-area:  image;
+  justify-self: center;
+  position: relative;
+  
+  
+  }
+  .image-container img{
+width: 100%;
+  
+  }
+
+.title-container{
+grid-area: image;
 background-color:#574141;
 opacity: .8;
 color:  #FFF4F3;
 text-align: center;
 padding:10px;
+position: absolute;
+top:-10px;
+left: -10px;
 }
 
-.title-description h4{
+.project-title {
   /* text-shadow: 0px 0px 3px #800020; */
-  font-size: 20px;
+  font-size: 40px;
 
 }
 
 
-.image-container{
-grid-area:  image;
-padding:10px;
-justify-self: center;
-
-}
-.image-container img{
-max-height: 400px;
-max-width: auto;
-
-}
 
 .stack-container{
 grid-area: stack;
 padding:10px;
+position: relative;
+min-height:200px;
+}
+.stack{
+  background-color: thistle;
+  position: absolute;
+  left:-10px;
+  top:-30px;
+  padding: 10px;
+}
 
+.stack h5{
+  font-size: 20px;
+}
+
+.front-end{
+  background-color: thistle;
+position: absolute;
+left:0px;
+top:25px;
+padding: 10px;
+}
+.back-end{
+  background-color: thistle;
+position: absolute;
+left:120px;
+top: -20px;
+padding: 10px;
 }
 
 .links-container{
