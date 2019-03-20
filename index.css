@@ -29,7 +29,7 @@ li{
   color:white
 }
 
-div.landing-container{
+/* div.landing-container{
   z-index:-1;
   opacity: 0.5;
   width: 100%; 
@@ -42,7 +42,7 @@ div.landing-container{
     background-repeat:no-repeat;
     background-size: cover;
     position: fixed;
-  }
+  } */
   
   .title{
     padding-top: 100px;
@@ -72,7 +72,7 @@ max-width: 1000px;
   'image image'
   'stack links';
   background: linear-gradient( #BFA5A4 , #fff);
-  margin-top:20px;
+  margin-top:50px;
   grid-gap: 10px 0px;
   
   border-radius: 3px;
@@ -99,7 +99,7 @@ color:  #FFF4F3;
 text-align: center;
 padding:10px;
 position: absolute;
-top:-10px;
+top:-5%;
 left: -10px;
 }
 
@@ -121,7 +121,7 @@ min-height:200px;
   background-color: thistle;
   position: absolute;
   left:-10px;
-  top:-30px;
+  top:-20px;
   padding: 10px;
 }
 
@@ -132,8 +132,8 @@ min-height:200px;
 .front-end{
   background-color: thistle;
 position: absolute;
-left:0px;
-top:25px;
+left:-5px;
+top:40px;
 padding: 10px;
 }
 .back-end{
@@ -147,9 +147,82 @@ padding: 10px;
 .links-container{
 grid-area: links;
 padding:10px;
-
+position: relative;
 }
 
+.link-a{
+  background-color: thistle;
+  position: absolute;
+  right:10%;
+  top:10px;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none
+}
+.link-b{
+  background-color: thistle;
+  position: absolute;
+  right:5%;
+  top:50px;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none
+
+}
+.link-c{
+  background-color: thistle;
+  position: absolute;
+  right:10%;
+  top:90px;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none
+}
+
+@media (min-width: 700px){
+  #project-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto ;
+    grid-template-areas: 
+    'stack image'
+    'links image';
+    background: linear-gradient( #BFA5A4 , #fff);
+    margin-top:50px;
+    grid-gap: 10px 0px;
+    
+    border-radius: 3px;
+  }
+
+  .title-container{
+    grid-area: image;
+    position: absolute;
+    left: -50%;
+  }
+  .stack{
+    background-color: thistle;
+    position: absolute;
+    left:-10px;
+    top: 80px;
+    padding: 10px;
+  }
+  
+  .front-end{
+    background-color: thistle;
+  position: absolute;
+  left:-5px;
+  top:140px;
+  padding: 10px;
+  }
+  .back-end{
+    background-color: thistle;
+  position: absolute;
+  left:120px;
+  top: 80px;
+  padding: 10px;
+  }
+
+}
 
 
 
