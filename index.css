@@ -86,13 +86,14 @@ div.image-container{
   grid-area:  image;
   justify-self: center;
   position: relative;
-  height:400px;
+  height:500px;
+  width: 100%;
 }
 .image-container img{
   object-fit: cover;
   object-position: 50% 0%;
-  height:375px;
-  width: 400px;
+  height:500px;
+  width: 100%;
  margin-left: auto;
 margin-right:auto;
   }
