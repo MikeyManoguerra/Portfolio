@@ -26,10 +26,10 @@ li{
   display: inline-block;
   padding : 20px;
   text-decoration: none;
-  color:#BFA5A4;
+  color:white
 }
 
-div.landing-container{
+/* div.landing-container{
   z-index:-1;
   opacity: 0.5;
   width: 100%; 
@@ -42,13 +42,13 @@ div.landing-container{
     background-repeat:no-repeat;
     background-size: cover;
     position: fixed;
-  }
+  } */
   
   .title{
     padding-top: 100px;
     text-align: center;
     color: black;
-    text-shadow: 0px 0px 15px #574141 ;
+    /* text-shadow: 0px 0px 15px #574141 ; */
 
 }
 
@@ -67,57 +67,162 @@ max-width: 1000px;
 #project-container{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 'header header'
+  grid-template-rows: auto auto ;
+  grid-template-areas: 
   'image image'
   'stack links';
   background: linear-gradient( #BFA5A4 , #fff);
-  margin-top:20px;
+  margin-top:50px;
   grid-gap: 10px 0px;
   
   border-radius: 3px;
 }
 
-.title-description{
-grid-area: header;
+
+div.image-container{
+  grid-area:  image;
+  justify-self: center;
+  position: relative;
+  
+  
+  }
+  .image-container img{
+width: 100%;
+  
+  }
+
+.title-container{
+grid-area: image;
 background-color:#574141;
 opacity: .8;
 color:  #FFF4F3;
 text-align: center;
 padding:10px;
+position: absolute;
+top:-5%;
+left: -10px;
 }
 
-.title-description h4{
+.project-title {
   /* text-shadow: 0px 0px 3px #800020; */
-  font-size: 20px;
+  font-size: 40px;
 
 }
 
 
-.image-container{
-grid-area:  image;
-padding:10px;
-justify-self: center;
-
-}
-.image-container img{
-max-height: 400px;
-max-width: auto;
-
-}
 
 .stack-container{
 grid-area: stack;
 padding:10px;
+position: relative;
+min-height:200px;
+}
+.stack{
+  background-color: thistle;
+  position: absolute;
+  left:-10px;
+  top:-20px;
+  padding: 10px;
+}
 
+.stack h5{
+  font-size: 20px;
+}
+
+.front-end{
+  background-color: thistle;
+position: absolute;
+left:-5px;
+top:40px;
+padding: 10px;
+}
+.back-end{
+  background-color: thistle;
+position: absolute;
+left:120px;
+top: -20px;
+padding: 10px;
 }
 
 .links-container{
 grid-area: links;
 padding:10px;
-
+position: relative;
 }
 
+.link-a{
+  background-color: thistle;
+  position: absolute;
+  right:10%;
+  top:10px;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none
+}
+.link-b{
+  background-color: thistle;
+  position: absolute;
+  right:5%;
+  top:50px;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none
+
+}
+.link-c{
+  background-color: thistle;
+  position: absolute;
+  right:10%;
+  top:90px;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none
+}
+
+@media (min-width: 700px){
+  #project-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto ;
+    grid-template-areas: 
+    'stack image'
+    'links image';
+    background: linear-gradient( #BFA5A4 , #fff);
+    margin-top:50px;
+    grid-gap: 10px 0px;
+    
+    border-radius: 3px;
+  }
+
+  .title-container{
+    grid-area: image;
+    position: absolute;
+    left: -50%;
+  }
+  .stack{
+    background-color: thistle;
+    position: absolute;
+    left:-10px;
+    top: 80px;
+    padding: 10px;
+  }
+  
+  .front-end{
+    background-color: thistle;
+  position: absolute;
+  left:-5px;
+  top:140px;
+  padding: 10px;
+  }
+  .back-end{
+    background-color: thistle;
+  position: absolute;
+  left:120px;
+  top: 80px;
+  padding: 10px;
+  }
+
+}
 
 
 
