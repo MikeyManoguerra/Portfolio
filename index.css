@@ -21,12 +21,14 @@
 
 .nav-item{
   display: inline-block;
-  padding: 20px 0px;
   text-align: center;
+  background-color:rosybrown;
+  padding: 20px 0px;
   
 }
 .nav-item a{
   color:black;
+  
 }
 
 .title{
