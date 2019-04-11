@@ -16,23 +16,23 @@
     <h1 class='title'> Mikey Manoguerra</h1>
     <h2 class="sub-title">Full Stack Developer</h2>
   </div>
-  <nav class=nav-bar>
-    <ul>
-      <li class='nav-item'><a href="#About">About</a></li>
-      <li class='nav-item'><a href="#Projects">Projects</a></li>
-      <li class='nav-item'><a href="#Contact">Contact</a></li>
-      <li class='nav-item'><a href="#Other">Other</a></li>
-    </ul>
-  </nav>
   <!-- Name , biline, location, basic nav, photo -->
-  <div class='landing-container'>
-  </div>
 </header>
-
 <body>
+      <div class='landing-container'>
+        <nav class=nav-bar>
+          <ul>
+            <li class='nav-item'><a href="#About">About</a></li>
+            <li class='nav-item'><a href="#Projects">Projects</a></li>
+            <li class='nav-item'><a href="#Contact">Contact</a></li>
+            <li class='nav-item'><a href="#Other">Other</a></li>
+          </ul>
+        </nav>
+      </div>
   <div id='main'>
     <section class='section' id='About'>
       <h3 class="section-title">About</h3>
+      <hr>
       <p class="about-description">
         Mikey has an eye for detail and cares about writing clean, modular, and well commented code.
         Find him writing JavaScript  using React, Redux, Node.js, Mongoose, Knex, and jQuery.
@@ -43,14 +43,20 @@
     </section>
     <section class='section' id='Projects'>
       <h3 class="section-title">Projects</h3>
+      <hr>
       <div id='project-container'>
-
         <div class="image-container">
           <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1554693032/matter.png" alt="hmmm">
         </div>
           <div class="title-container">
             <h4 class="project-title">Matter-Source</h4>
-            <p>Best and coolest capstone ever</p>
+          </div>
+          <div class="description-container">
+              <p>Best and coolest capstone ever. an attempt to 
+                have peopel post their favorite quirky objects and it will give them feedback
+                about where its from and share it with the world.
+              </p>
+
           </div>
         <div class="stack-container">
           <div class="second-image">
@@ -60,19 +66,13 @@
           <div class="stack">
             <h5>Stack:</h5>
           </div>
-          <dl>
-            <div class="front-end">
-              <ul>Front End
-
+          
+            <div class="stack-list">
+              <ul>
                 <li>React</li>
                 <li>Redux</li>
                 <li>Redux-Form</li>
                 <li>Enzyme</li>
-              </ul>
-            </div>
-            <div class="back-end">
-              <ul>Back End
-
                 <li>Node</li>
                 <li>Express</li>
                 <li>PostGresQL</li>
@@ -81,12 +81,12 @@
                 <li>Chai</li>
               </ul>
             </div>
-          </dl>
+          
         </div>
         <div class="links-container">
-          <a class='link-a' href="https://github.com/MikeyManoguerra/mikey-cool-stuff-client">Client Repository</a><br>
-          <a class='link-b' href="https://matter-source-client.herokuapp.com">Deployed App</a><br>
-          <a class='link-c' href="https://github.com/MikeyManoguerra/mikey-cool-stuff-server">Server Repository</a><br>
+          <a class='link-a' href="https://github.com/MikeyManoguerra/mikey-cool-stuff-client"><button>Client Repository</button></a>
+          <a class='link-b' href="https://matter-source-client.herokuapp.com"><button>Deployed app</button></a>
+          <a class='link-c' href="https://github.com/MikeyManoguerra/mikey-cool-stuff-server"><button>Server Repository</button></a>
         </div>
       </div>
       <div id='project-container'>
@@ -96,33 +96,36 @@
       </div>
         <div class="title-container">
           <h4 class="project-title">Views-Via-Iss</h4>
-          <p>Implementation of three public apis, modulization of files</p>
+        </div>
+        <div class="description-container">
+            <p>Implementation of three public apis, modulization of files</p>
       </div>
       <div class="stack-container">
         <div class="stack">
           <h5>Stack:</h5>
         </div>
-        <dl>
-          <div class="front-end">
-            <h6>Front End</h6>
-            <ul class="stack-list">
 
-              <li>Webpack</li>
-              <li>jquery</li>
-              <li>html5</li>
-              <li>Css3</li>
-            </ul>
-            </div>
-        </dl>
+        <div class="stack-list">
+
+          <ul class="stack-list">
+            <li>Webpack</li>
+            <li>jquery</li>
+            <li>html5</li>
+            <li>Css3</li>
+          </ul>
+        </div>
+        
       </div>
       <div class="links-container">
-        <a class='link-a' href="https://github.com/MikeyManoguerra/Views-via-ISS">Github</a><br>
-        <a class='link-b' href="https://mikeymanoguerra.github.io/Views-via-ISS/">client</a><br>
+        <a class='link-a' href="https://github.com/MikeyManoguerra/Views-via-ISS"><button>Github</button></a>
+        <a class='link-b' href="https://mikeymanoguerra.github.io/Views-via-ISS/"><button>Client Site</button></a>
       </div>
   </div>
   </section>
   <section class='section' id='Contact'>
     <h3>Contact</h3>
+    <hr>
+
   </section>
   <section class='section' id='Other'>
     <h3>Other</h3>
