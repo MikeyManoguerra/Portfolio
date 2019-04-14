@@ -331,6 +331,7 @@ button{
   bottom:10px;
   position: absolute;
   transition: transform .15s;
+  transform: scale(.9);
 }
 
 .git-button{
@@ -342,6 +343,6 @@ button{
 
 button:hover{
   background-color: #FEC511;
-  transform: scale(1.1);
+  transform: scale(1);
 transition: transform .15s;
 }
