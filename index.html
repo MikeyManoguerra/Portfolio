@@ -8,36 +8,39 @@
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Cute+Font|Poppins" rel="stylesheet">
   <title>Portfolio</title>
+
 </head>
+
 <body>
-<header>
-  <div class="title-container">
+  <header>
+    <div class="title-container">
 
-    <h1 class='title'> Mikey Manoguerra</h1>
-    <h2 class="sub-title">Full Stack Developer</h2>
+      <h1 class='title'> Mikey Manoguerra</h1>
+      <h2 class="sub-title">Full Stack Developer</h2>
+    </div>
+    <!-- Name , biline, location, basic nav, photo -->
+  </header>
+  <main role="main">
+    <div class="view-blocker">
   </div>
-  <!-- Name , biline, location, basic nav, photo -->
-</header>
-<main role="main">
-
-  <div class='landing-container'>
-    <a class='nav-item' href="#About">About</a>
-    <a class='nav-item' href="#Projects">Projects</a>
-    <a class='nav-item' href="#Contact">Contact</a>
-    <a class='nav-item' href="#Other">Other</a>
-  </div>
-  <div id='main'>
-    <section class='section' id='About'>
-      <h3 class="section-title">About</h3>
-      <hr>
-      <p class="about-description">
-        Mikey has an eye for detail and cares about writing clean, modular, and well commented code.
-        Find him writing JavaScript using React, Redux, Node.js, Mongoose, Knex, and jQuery.
-        He uses PostgresQL and MongoDB for storage. Tools he uses are Git version control, CICD, as well
-        as Enzyme, Mocha, and Chai. You will also likely spot him writing Python, with a Django framework.
-      </p>
-      <p class="about-description">Mikey has a passion for learning new things and tackling problems with ease. You'll
-        be amazed at what he can do!</p>
+        <div class='landing-container'>
+        <a class='nav-item' href="#About">About</a>
+        <a class='nav-item' href="#Projects">Projects</a>
+        <a class='nav-item' href="#Contact">Contact</a>
+        <a class='nav-item' href="#Other">Other</a>
+    </div>
+    <div id='main'>
+      <section class='section' id='About'>
+        <h3 class="section-title">About</h3>
+        <hr>
+        <p class="about-description">
+          Mikey has an eye for detail and cares about writing clean, modular, and well commented code.
+          Find him writing JavaScript using React, Redux, Node.js, Mongoose, Knex, and jQuery.
+          He uses PostgresQL and MongoDB for storage. Tools he uses are Git version control, CICD, as well
+          as Enzyme, Mocha, and Chai. You will also likely spot him writing Python, with a Django framework.
+        </p>
+        <p class="about-description">Mikey has a passion for learning new things and tackling problems with ease. You'll
+          be amazed at what he can do!</p>
       </section>
       <section class='section' id='Projects'>
         <h3 class="section-title">Projects</h3>
@@ -54,79 +57,105 @@
               have peopel post their favorite quirky objects and it will give them feedback
               about where its from and share it with the world.
             </p>
-            
+
           </div>
           <div class="stack-container">
             <div class="second-image">
               <!-- <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1553118048/map-view-matter-source.png" 
                 alt="hey"> -->
-              </div>
-              <div class="stack">
-                <h5>Stack:</h5>
-              </div>
-              
-              <div class="stack-list">
-                <ul>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Redux-Form</li>
-                  <li>Enzyme</li>
-                  <li>Node</li>
-                  <li>Express</li>
-                  <li>PostGresQL</li>
-                  <li>Knex</li>
-                  <li>Mocha</li>
-                  <li>Chai</li>
-                </ul>
-              </div>
-              
             </div>
-            <div class="links-container">
-              <a class='link-a' href="https://github.com/MikeyManoguerra/mikey-cool-stuff-client"><button>Github</button></a>
-              <a class='link-b' href="https://matter-source-client.herokuapp.com"><button>Live Site</button></a>
+            <div class="stack">
+              <h5>Stack:</h5>
             </div>
-          </div>
-          <div id='project-container'>
-            <div class="image-container">
-              <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1554692605/issss.png" alt="hmmmm">
-            </div>
-            <div class="project-title-container">
-              <h4 class="project-title">Views-Via-Iss</h4>
-            </div>
-            <div class="description-container">
-              <p>Implementation of three public apis, modulization of files</p>
-            </div>
-            <div class="stack-container">
-              <div class="stack">
-                <h5>Stack:</h5>
-              </div>
-              <ul class="stack-list">
-                <li>Webpack</li>
-                <li>jquery</li>
-                <li>html5</li>
-                <li>Css3</li>
+
+            <div class="stack-list">
+              <ul>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Redux-Form</li>
+                <li>Enzyme</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>PostGresQL</li>
+                <li>Knex</li>
+                <li>Mocha</li>
+                <li>Chai</li>
               </ul>
             </div>
-            <div class="links-container">
-              <a class='link-a' href="https://github.com/MikeyManoguerra/Views-via-ISS"><button>Github</button></a>
-              <a class='link-b' href="https://mikeymanoguerra.github.io/Views-via-ISS/"><button>Client Site</button></a>
-            </div>
+
           </div>
-        </section>
-        <section class='section' id='Contact'>
-          <h3 class='section-title'>Contact</h3>
-          <hr>
-          
-        </section>
-        <section class='section' id='Other'>
-          <h3 class='section-title'>Other</h3>
-        </section>
-        
-      </div>
-    </main>
-    </body>
-    <footer>
+          <div class="links-container">
+            <button onclick="goToGithubOrLiveSite('https:/\/github.com/MikeyManoguerra/mikey-cool-stuff-client')">
+              <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1555191315/GitHub-Mark-Light-64px.png" alt=""
+                class="button-image">
+            </button>
+            <button onclick="goToGithubOrLiveSite('https:/\/matter-source-client.herokuapp.com')">
+              Live Site
+            </button>
+          </div>
+        </div>
+        <div id='project-container'>
+          <div class="image-container">
+            <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1554692605/issss.png" alt="hmmmm">
+          </div>
+          <div class="project-title-container">
+            <h4 class="project-title">Views-Via-Iss</h4>
+          </div>
+          <div class="description-container">
+            <p>Implementation of three public apis, modulization of files</p>
+          </div>
+          <div class="stack-container">
+            <div class="stack">
+              <h5>Stack:</h5>
+            </div>
+            <ul class="stack-list">
+              <li>Webpack</li>
+              <li>jquery</li>
+              <li>html5</li>
+              <li>Css3</li>
+            </ul>
+          </div>
+          <div class="links-container">
+            <button onclick="goToGithubOrLiveSite('https:/\/github.com/MikeyManoguerra/Views-via-ISS')"><img
+                src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1555191315/GitHub-Mark-Light-64px.png"
+                alt="github" class="button-image"></button>
+            <button onclick="goToGithubOrLiveSite('https:/\/mikeymanoguerra.github.io/Views-via-ISS/')">Live
+              Site</button></a>
+          </div>
+        </div>
+      </section>
+      <section class='section' id='Contact'>
+        <h3 class='section-title'>Contact</h3>
+        <hr>
+
+      </section>
+      <section class='section' id='Other'>
+        <h3 class='section-title'>Other</h3>
+      </section>
+
+    </div>
+  </main>
+</body>
+<footer>
 
 </footer>
+<script>
+  function goToGithubOrLiveSite(url) {
+    const openLink = window.open(url) //, '_blank'
+    // openLink.focus()
+    return openLink
+  }
+
+  const shiftWindow = function () {
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (viewportWidth > 1100) {
+      return;
+    } else {
+      scrollBy(0, -75);
+    }
+  };
+  if (location.hash) shiftWindow();
+  window.addEventListener("hashchange", shiftWindow);
+</script>
 
 </html>
