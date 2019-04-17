@@ -140,7 +140,7 @@ hr{
 }
 .footer-text{
   text-align: right;
-/* margin: auto 0; */
+  padding: 5px 20px;
 }
 
 .about-description{
