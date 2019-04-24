@@ -364,7 +364,9 @@ hr{
   }
   }
 
-
+.email-link{
+  color: rgb(163, 184, 251)
+}
 
 button{
   background-color: #FEB103;
@@ -381,6 +383,7 @@ button{
   transition: transform .15s;
   transform: scale(.9);
 }
+
 
 .git-button{
   right: 10px;
