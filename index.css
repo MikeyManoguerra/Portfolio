@@ -43,8 +43,8 @@ body{
 
 .app-title-container{
   background-image:linear-gradient(
-    rgba(177, 78, 90, 0.35),
-    rgba(177, 78, 90, 0.35)
+    rgba(177, 78, 90, 0.25),
+    rgba(177, 78, 90, 0.25)
   ), url(https://res.cloudinary.com/dgzjr8afn/image/upload/v1556060111/background-close.jpg);
   top: 0;
   height: 100vh;
