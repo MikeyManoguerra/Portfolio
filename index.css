@@ -43,8 +43,11 @@ body{
 
 .app-title-container{
   background-image:linear-gradient(
-    rgba(177, 78, 90, 0.25),
-    rgba(177, 78, 90, 0.25)
+    rgba(177, 78, 90, 0.8),
+    rgba(177, 78, 90, 0.8),
+    rgba(177, 78, 90, 0.1),
+    rgba(177, 78, 90)
+
   ), url(https://res.cloudinary.com/dgzjr8afn/image/upload/v1556060111/background-close.jpg);
   top: 0;
   height: 100vh;
@@ -113,8 +116,7 @@ ul{
   color:#F5EED2;
   font-weight: bold;
   font-family: 'Cute Font', cursive;
-  text-shadow: #FEB103 1px 0 3px;
-
+  text-shadow: #FEB103 1px 0 1px;
 }
 
 .sub-title{
@@ -124,8 +126,7 @@ padding: 0 0 30px;
   color:#F5EED2;
   font-weight: bold;
   font-family: 'Cute Font', cursive;
-  text-shadow: #FEB103 1px 0 3px;
-}
+  text-shadow: #FEB103 1px 0 1px;}
 
 .arrow{
   display:block;
@@ -365,7 +366,12 @@ hr{
   }
 
 .email-link{
-  color: rgb(50, 98, 255)
+  font-size:22px;
+  color: rgb(235, 248, 255)
+}
+
+.email-link:hover{
+  color: rgb(250, 245, 224);
 }
 
 button{
