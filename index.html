@@ -17,7 +17,8 @@
 
       <h1 class='title'> Mikey Manoguerra</h1>
       <h2 class="sub-title">Full Stack Developer</h2>
-      <a href='#Projects'> <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1556061225/arrowwithshadow.png" alt="down arrow" class="arrow"></a>
+      <a href='#Projects'> <img src="https://res.cloudinary.com/dgzjr8afn/image/upload/v1556061225/arrowwithshadow.png"
+          alt="down arrow" class="arrow"></a>
     </div>
     <!-- Name , biline, location, basic nav, photo -->
   </header>
@@ -26,6 +27,7 @@
     </div>
     <div class='landing-container'>
       <a class='nav-item' href="#About">About</a>
+      <a class='nav-item' href="#Recently">Recently</a>
       <a class='nav-item' href="#Projects">Projects</a>
       <a class='nav-item' href="#Contact">Contact</a>
       <a class='nav-item' href="#Other">Other</a>
@@ -44,8 +46,25 @@
           lots of daily experience with collaboration, pair programming, and understand the benefits of teamwork. You'll
           be amazed at what I can do, and how fast I can learn!</p>
       </section>
+      <section class='section' id='Recently'>
+        <h3 class="section-title">Recently</h3>
+        <hr>
+        <p class="about-description first">
+          Since January, I have been an integral member of a Code For Philly project for Prevention Point,
+          Philadelphia. We are building a Django/React Reporting and Appointment Application. The work I have done has
+          been primarily server side.
+        </p>
+        <br>
+        <p class="about-description">
+          I spent the month of July 2019 teaching two classes of Javascript every day for the SMASH Academy at the
+          Wharton School of Business.
+          This intensive high school age national STEM program has the goal of inspiring and preparing under represented
+          communities for STEM careers.
+          My class covered the fundamentals of JavaScript, using the p5.JS library.
+        </p>
+      </section>
       <section class='section' id='Projects'>
-        <h3 class="section-title">Projects</h3>
+        <h3 class="section-title">Past Projects</h3>
         <hr>
 
         <div class='project-container'>
@@ -236,7 +255,8 @@
         <h3 class='section-title'>Contact</h3>
         <hr>
         <h4 class='contact-info contact-title'>Questions? Collaboration ideas? Reach Out!</h4>
-        <p class="contact-info"> Email: <a href='mailto:MikeyManoguerra@gmail.com' class='email-link'> MikeyManoguerra@gmail.com </a></p>
+        <p class="contact-info"> Email: <a href='mailto:MikeyManoguerra@gmail.com' class='email-link'>
+            MikeyManoguerra@gmail.com </a></p>
         <div class="media-links">
           <button class='media-button' aria-label="github"
             onclick="goToGithubOrLiveSite('https:/\/github.com/MikeyManoguerra')"><img
@@ -275,12 +295,13 @@
       // if (viewportWidth > 1300) {
       //   return;
       // } else {
-        scrollBy(0, -75);
+      scrollBy(0, -75);
       // }
     };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
   </script>
+  
 </body>
 
 </html>
