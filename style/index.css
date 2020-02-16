@@ -1,0 +1,119 @@
+.about__inner {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-areas: 
+  "bio "
+  "position" "other"
+  "list1" 
+  "list2" "list3" "list4";
+}
+
+@media(min-width: 600px) {
+  .about__inner {
+    grid-template-areas: 
+    "bio bio"
+    "position other"
+    "list1 list2" 
+    "list3 list4";
+  }
+}
+
+@media(min-width: 1000px) {
+  .about__inner {
+    grid-template-areas: 
+    "bio bio bio ."
+    "position other . ."
+    "list1 list2 list3 list4";
+  }
+}
+
+.about__bio {
+  grid-area: bio;
+}
+
+.about__frontend-list {
+  grid-area: list1;
+  padding: 20px;
+}
+
+.about__backend-list {
+  grid-area: list2;
+  padding: 20px;
+}
+
+.about__developer-list {
+  grid-area: list3;
+  padding: 20px;
+}
+
+.about__experienced-list {
+  grid-area: list4;
+  padding: 20px;
+}
+
+.about__positions-list {
+  grid-area: position;
+  padding: 20px;
+}
+
+.about__other-list {
+  grid-area: other;
+  padding: 20px;
+}
+
+.project__inner {
+  display:  grid;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-areas:
+  "heading"
+  "image"
+  "copyArea"
+  "links";
+}
+
+@media(min-width: 600px) {
+  .project__inner {
+    grid-template-areas:
+    "heading image"
+    "copyArea image"
+    "links image";
+  }
+}
+
+  @media(min-width: 1000px) {
+    .project__inner {
+      grid-template-areas:
+      "heading image"
+      "copyArea image"
+      "links image";
+    }
+  }
+
+.project__heading {
+  grid-area: heading;
+}
+
+.project__copy {
+  grid-area: copyArea;
+}
+
+.project__image {
+}
+
+.project__image-wrapper {
+  grid-area: image;
+}
+
+.project__link {
+  margin-right: 20px;
+}
+
+.project__link-wrapper {
+  grid-area: links;
+}
