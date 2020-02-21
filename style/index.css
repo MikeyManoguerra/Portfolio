@@ -1,0 +1,119 @@
+.about__inner {
+  margin-right: 30px;
+  margin-left: 30px;
+  max-width: 1200px;
+  display: grid;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-areas: "name" "heading" "bio" "position" "other" "list1" "list2" "list3" "list4";
+}
+
+@media(min-width: 600px) {
+  .about__inner {
+    grid-template-areas: ". name" "heading heading" "bio bio" "position other" "list1 list2" "list3 list4";
+  }
+}
+
+@media(min-width: 1000px) {
+  .about__inner {
+    grid-template-areas: ". . name name" "heading heading . ." "bio bio bio ." "position other . ." "list1 list2 list3 list4";
+  }
+}
+
+.about__name {
+  grid-area: name;
+}
+
+.about__heading {
+  grid-area: heading;
+  font-size: 12px;
+}
+.about__bio {
+  grid-area: bio;
+  margin-top: 30px;
+}
+
+.about__frontend-list {
+  grid-area: list1;
+  padding: 20px 0;
+}
+
+
+.about__backend-list {
+  grid-area: list2;
+  padding: 20px 0;
+}
+
+.about__developer-list {
+  grid-area: list3;
+  padding: 20px 0;
+}
+
+.about__experienced-list {
+  grid-area: list4;
+  padding: 20px 0;
+}
+
+.about__positions-list {
+  grid-area: position;
+  padding: 20px 0;
+}
+
+.about__positions-list-item {
+  margin-bottom: 20px;
+}
+
+.about__positions-list-item>p:first-child, .about__other-list-item>p:first-child {
+  font-weight: bold;
+}
+
+.about__other-list {
+  grid-area: other;
+  padding: 20px 0;
+}
+
+.project__inner {
+  display: grid;
+  gap: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-template-areas: "heading" "image" "copyArea" "links";
+}
+
+@media(min-width: 600px) {
+  .project__inner {
+    grid-template-areas: "heading image" "copyArea image" "links image";
+  }
+}
+
+@media(min-width: 1000px) {
+  .project__inner {
+    grid-template-areas: "heading image" "copyArea image" "links image";
+  }
+}
+
+.project__heading {
+  grid-area: heading;
+}
+
+.project__copy {
+  grid-area: copyArea;
+}
+
+.project__image {}
+
+.project__image-wrapper {
+  grid-area: image;
+}
+
+.project__link {
+  margin-right: 20px;
+}
+
+.project__link-wrapper {
+  grid-area: links;
+}
