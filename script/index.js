@@ -13,7 +13,7 @@ const handleTechnologyLists = (/*block*/) => Object.keys(portfolioData.technolog
 
 function handleCurrentlyLists() {
   const positionsUl = util.createCurrentlyList(portfolioData.currently.positions, 'about__positions-')
-  const otherUl = util.createCurrentlyList(portfolioData.currently.positions, 'about__other-')
+  const otherUl = util.createCurrentlyList(portfolioData.currently.other, 'about__other-')
   
   return [positionsUl, otherUl]
 }
@@ -31,8 +31,13 @@ function handleAboutSection() {
   const aboutSection = nestGridContainer("section", 'about')
   const aboutSectionInner = util.firstChildRef(aboutSection)
 
+  const name = util.createElementWithClass('h1', 'about__name', portfolioData.name)
+  aboutSectionInner.appendChild(name)
+  const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
+  aboutSectionInner.appendChild(heading)
   const bio = util.createElementWithClass('p', 'about__bio', portfolioData.bio)
   aboutSectionInner.appendChild(bio)
+  
 
   const currently = handleCurrentlyLists()
   for (list of currently) {
@@ -62,7 +67,6 @@ function handleProject(project) {
   const imageWrapper = util.createElementWithClass('div', 'project__image-wrapper')
   imageWrapper.appendChild(image)
 
-  
   const git = util.createElementWithClass('a', 'project__link', 'git')
   git.setAttribute('href', project.links.git)
   
@@ -80,7 +84,6 @@ function handleProject(project) {
 
   return projectArticle
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const { main, header, footer } = getBaseElements()
