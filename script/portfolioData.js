@@ -2,6 +2,10 @@ const portfolioData = (function loadData() {
   return {
     name: "Mikey Manoguerra",
     heading: "This site is built dynamically with vanilla javascript. It's a work in progress!",
+    cta:{
+      label: 'follow along here!',
+      href: 'https://www.github.com/mikeymanoguerra/portfolio'
+    },
     bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems.",
     currently: {
       positions: [

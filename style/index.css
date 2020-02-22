@@ -25,7 +25,7 @@
   grid-area: name;
 }
 
-.about__heading {
+.about__heading-wrapper {
   grid-area: heading;
   font-size: 12px;
 }
