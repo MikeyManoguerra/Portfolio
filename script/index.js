@@ -22,33 +22,41 @@ function nestGridContainer(el, block) {
   const outer = util.createElementWithClass(el, block)
   const inner = util.createElementWithClass('div', `${block}__inner`)
   outer.appendChild(inner)
-
   return outer
 }
+
+
 
 
 function handleAboutSection() {
   const aboutSection = nestGridContainer("section", 'about')
   const aboutSectionInner = util.firstChildRef(aboutSection)
-
-  const name = util.createElementWithClass('h1', 'about__name', portfolioData.name)
-  aboutSectionInner.appendChild(name)
-  const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
-  aboutSectionInner.appendChild(heading)
-  const bio = util.createElementWithClass('p', 'about__bio', portfolioData.bio)
-  aboutSectionInner.appendChild(bio)
+  const fragment = document.createDocumentFragment()
   
+  const name = util.createElementWithClass('h1', 'about__name', portfolioData.name)  
+  const wrapper = util.createElementWithClass('div', 'about__heading-wrapper')
+  const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
+  const cta = util.createElementWithClass('a', 'about__cta', portfolioData.cta.label)
+  const bio = util.createElementWithClass('p', 'about__bio', portfolioData.bio)
+  
+  cta.setAttribute('href', portfolioData.cta.href)
+  wrapper.appendChild(heading)
+  wrapper.appendChild(cta)
 
+  fragment.append(name, wrapper, bio)
+  
+  
   const currently = handleCurrentlyLists()
   for (list of currently) {
-    aboutSectionInner.appendChild(list)
+    fragment.appendChild(list)
   }
-
+  
   const techLists = handleTechnologyLists()
   for (list of techLists) {
-    aboutSectionInner.appendChild(list)
+    fragment.appendChild(list)
   }
-
+  
+  aboutSectionInner.appendChild(fragment)
   return aboutSection
 }
 
