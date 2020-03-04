@@ -54,14 +54,14 @@ const portfolioData = (function loadData() {
       ],
       developer: [
         "sh",
-        "git \<3",
-        "regex",
+        "git",
         "heroku",
         "netlify",
         "debugger",
         "cli tools"
       ],
       experienced: [
+        "regex",
         "flask",
         "pandas"
       ]
