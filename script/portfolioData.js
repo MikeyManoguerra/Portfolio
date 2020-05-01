@@ -72,7 +72,7 @@ const portfolioData = (function loadData() {
         description: "MERN stack application with Redux. Build a customizable decision based story and share with others. Pointer based system allows for unique configurations.",
         image: {
           src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1569336781/Screen_Shot_2019-09-24_at_10.51.33.png",
-          alt: ''
+          alt: "screenshot of D3 tool in app"
         },
         links: {
           git: "https:/\/github.com/MikeyManoguerra/decision-trees",
@@ -95,7 +95,7 @@ const portfolioData = (function loadData() {
         description: "Jquery-webpack application with session state. Uses ISS location data from one API to query image and map assets from two other APIs.",
         image: {
           src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555687146/issdark.png",
-          alt: ''
+          alt: "screenshot of ISS app with satelite images"
         },
         links: {
           git: "https:/\/github.com/MikeyManoguerra/Views-via-ISS",
@@ -106,6 +106,38 @@ const portfolioData = (function loadData() {
           "jQuery",
           "Html5",
           "Css3"
+        ]
+      },
+      {
+        "title": "P5 Examples",
+        "description": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
+        "image": {
+          "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1588342577/treesp5.png",
+          "alt": " screenshot of tree animation"
+        },
+        "links": {
+          "git": "https:/\/github.com/MikeyManoguerra/p5-hosted-example",
+          "live": "https://mikeymanoguerra.github.io/p5-hosted-example/"
+        },
+        "technologies": [
+          "p5js",
+          "Git GUI"
+        ]
+      },
+      {
+        heading: "Python CLI Dichotomous Key",
+        description: "Command line tool to identify Eastern North American species of the Pinus Genus (pine trees).",
+        image: {
+          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555216047/CLI.png",
+          alt: "screenshot of CLI terminal"
+        },
+        links: {
+          git: "https:/\/github.com/MikeyManoguerra/dichotomous-key",
+          live: null
+        },
+        technologies: [
+          "Python3",
+          "Wikipedia API"
         ]
       },
       {
@@ -129,22 +161,6 @@ const portfolioData = (function loadData() {
           "Mongoose",
           "Mocha",
           "Chai"
-        ]
-      },
-      {
-        heading: "Python CLI Dichotomous Key",
-        description: "Command line tool to identify Eastern North American species of the Pinus Genus (pine trees).",
-        image: {
-          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555216047/CLI.png",
-          alt: ''
-        },
-        links: {
-          git: "https:/\/github.com/MikeyManoguerra/dichotomous-key",
-          live: null
-        },
-        technologies: [
-          "Python3",
-          "Wikipedia API"
         ]
       }
     ]

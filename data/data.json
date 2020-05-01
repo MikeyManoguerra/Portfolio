@@ -14,7 +14,11 @@
     "other": [
       {
         "location": "Code For Philly",
-        "description": "unified reporting system for Prevention Point"
+        "description": "unified reporting system for Prevention Point",
+        "link": {
+          "href": "https://www.github.com/codeforphilly/prevention-point",
+          "label": "learn more"
+        }
       }
     ]
   },
@@ -95,6 +99,32 @@
       ]
     },
     {
+      "title": "Python CLI Dichotomous Key",
+      "description": "Command line tool to identify eastern species of the Pinus Genus (pine trees). version 2.0 with a django back end and PostGresQL server in the works",
+      "image": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555216047/CLI.png",
+      "links": {
+        "git": "https:/\/github.com/MikeyManoguerra/dichotomous-key",
+        "live": null
+      },
+      "technologies": [
+        "Python3",
+        "Wikipedia API"
+      ]
+    },
+    {
+      "title": "P5 Examples",
+      "description": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
+      "image": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1588342577/treesp5.png",
+      "links": {
+        "git": "https:/\/github.com/MikeyManoguerra/p5-hosted-example",
+        "live": "https://mikeymanoguerra.github.io/p5-hosted-example/"
+      },
+      "technologies": [
+        "p5js",
+        "Git GUI"
+      ]
+    },
+    {
       "title": "Friday Night Knowledge",
       "description": "This project uses a spaced repetition algorithm to serve a list of foreign words in an order based upon how often you get the word correct. More successful answers mean more time before the word appears again. This is version 2.0 of the app, which is refactored from a pair project. The user can now pick from several languages, and the database will hold the history of the user for each. The code base is in a mono repo. ",
       "image": "https: //res.cloudinary.com/dgzjr8afn/image/upload/v1555616756/new-friday.png",
@@ -112,19 +142,6 @@
         "Mongoose",
         "Mocha",
         "Chai"
-      ]
-    },
-    {
-      "title": "Python CLI Dichotomous Key",
-      "description": "Command line tool to identify eastern species of the Pinus Genus (pine trees). version 2.0 with a django back end and PostGresQL server in the works",
-      "image": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555216047/CLI.png",
-      "links": {
-        "git": "https:/\/github.com/MikeyManoguerra/dichotomous-key",
-        "live": null
-      },
-      "technologies": [
-        "Python3",
-        "Wikipedia API"
       ]
     }
   ]
