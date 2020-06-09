@@ -1,6 +1,6 @@
 const portfolioData = (function loadData() {
   return {
-    name: "Mikey Manoguerra",
+    name: "Michael Manoguerra",
     heading: "This site is built dynamically with vanilla javascript. It's a work in progress!",
     cta:{
       label: 'follow along here!',
@@ -43,11 +43,11 @@ const portfolioData = (function loadData() {
       backend: [
         "node",
         "python",
+        "django",
         "express",
         "mongodb",
         "passport",
         "postresQL",
-        "django (base)",
         "docker-compose",
         "REST Architecture",
         "django rest framework"
