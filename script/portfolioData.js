@@ -91,21 +91,24 @@ const portfolioData = (function loadData() {
         ]
       },
       {
-        heading: "Views-Via-ISS",
-        description: "Jquery-webpack application with session state. Uses ISS location data from one API to query image and map assets from two other APIs.",
+        heading: "Dustballs dot App",
+        description: "WORK IN PROGRESS application combining React Typescript SPA with a Flask Server and a Mongo Database. Netlify Frontend communicates with REST backend on a DigitalOcean Droplet",
         image: {
-          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555687146/issdark.png",
-          alt: "screenshot of ISS app with satelite images"
+          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1592671486/dustballs-screen.png",
+          alt: "screenshot of dustballs"
         },
         links: {
-          git: "https:/\/github.com/MikeyManoguerra/Views-via-ISS",
-          live: "https:/\/mikeymanoguerra.github.io/Views-via-ISS/"
+          git: "https:/\/github.com/MikeyManoguerra/dustballs",
+          live: "https:/\/dustballs.app"
         },
         technologies: [
-          "Webpack",
-          "jQuery",
-          "Html5",
-          "Css3"
+          "Typescript",
+          "React",
+          "SCSS",
+          "Flask",
+          "Nginx",
+          "MongoDB Atlas",
+          "Digital Ocean"
         ]
       },
       {
@@ -125,19 +128,21 @@ const portfolioData = (function loadData() {
         ]
       },
       {
-        heading: "Python CLI Dichotomous Key",
-        description: "Command line tool to identify Eastern North American species of the Pinus Genus (pine trees).",
+        heading: "Prevention Point Reporting System",
+        description: "Code for Philly Project",
         image: {
-          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555216047/CLI.png",
+          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1592673102/ppp-screen.png",
           alt: "screenshot of CLI terminal"
         },
         links: {
-          git: "https:/\/github.com/MikeyManoguerra/dichotomous-key",
+          git: "https:/\/github.com/CodeforPhilly/prevention-point",
           live: null
         },
         technologies: [
-          "Python3",
-          "Wikipedia API"
+          "Django REST Framework",
+          "React",
+          "Mobx",
+          "Docker"
         ]
       },
       {
