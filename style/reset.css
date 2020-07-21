@@ -1,11 +1,24 @@
 html {
   box-sizing: border-box;
   font-size: 20px;
-  font-family: monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2a2e32;
+  /* background: linear-gradient(wheat, ivory); */
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+
+body::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgb(239, 205, 205), rgb(253, 253, 245));
+  content: '';
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {

@@ -1,6 +1,9 @@
+.about {position: relative;
+  padding: 25px;
+}
+
 .about__inner {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 0 auto;
   max-width: 1200px;
   display: grid;
   gap: 10px;
@@ -23,14 +26,20 @@
 
 .about__name {
   grid-area: name;
+  font-family: monospace;
 }
 
 .about__heading-wrapper {
   grid-area: heading;
   font-size: 12px;
 }
+
 .about__bio {
   grid-area: bio;
+  margin-top: 30px;
+}
+
+.about__bio>p {
   margin-top: 30px;
 }
 
@@ -38,7 +47,6 @@
   grid-area: list1;
   padding: 20px 0;
 }
-
 
 .about__backend-list {
   grid-area: list2;
@@ -73,11 +81,15 @@
   padding: 20px 0;
 }
 
+.project {
+  position: relative;
+  padding: 25px;
+}
+
 .project__inner {
   display: grid;
   gap: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0 auto;
   max-width: 1200px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -98,6 +110,7 @@
 
 .project__heading {
   grid-area: heading;
+  font-family: monospace;
 }
 
 .project__copy {

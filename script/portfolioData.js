@@ -2,17 +2,17 @@ const portfolioData = (function loadData() {
   return {
     name: "Michael Manoguerra",
     heading: "This site is built dynamically with vanilla javascript. It's a work in progress!",
-    cta:{
+    cta: {
       label: 'follow along here!',
       href: 'https://www.github.com/mikeymanoguerra/portfolio'
+    },
+    vote: {
+      label: 'Register To Vote',
+      href: 'https://vote.gov/'
     },
     bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems.",
     currently: {
       positions: [
-        {
-          location: "160over90",
-          description: "jr web developer"
-        },
         {
           location: "Boxplot Analytics",
           description: "application developer"
@@ -21,7 +21,7 @@ const portfolioData = (function loadData() {
       other: [
         {
           location: "Code For Philly",
-          description: "unified reporting system for Prevention Point"
+          description: "Tech lead for Prevention Point Project"
         }
       ]
     },
@@ -92,7 +92,7 @@ const portfolioData = (function loadData() {
       },
       {
         heading: "Dustballs dot App",
-        description: "WORK IN PROGRESS application combining React Typescript SPA with a Flask Server and a Mongo Database. Netlify Frontend communicates with REST backend on a DigitalOcean Droplet",
+        description: "Application combining React Typescript SPA with a Flask Server and a Mongo Database. Netlify Frontend communicates with REST backend on a DigitalOcean Droplet",
         image: {
           src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1592671486/dustballs-screen.png",
           alt: "screenshot of dustballs"
@@ -112,7 +112,7 @@ const portfolioData = (function loadData() {
         ]
       },
       {
-        "title": "P5 Examples",
+        "heading": "P5 Examples",
         "description": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
         "image": {
           "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1588342577/treesp5.png",

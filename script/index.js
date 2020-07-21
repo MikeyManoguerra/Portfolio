@@ -14,7 +14,7 @@ const handleTechnologyLists = (/*block*/) => Object.keys(portfolioData.technolog
 function handleCurrentlyLists() {
   const positionsUl = util.createCurrentlyList(portfolioData.currently.positions, 'about__positions-')
   const otherUl = util.createCurrentlyList(portfolioData.currently.other, 'about__other-')
-  
+
   return [positionsUl, otherUl]
 }
 
@@ -32,30 +32,35 @@ function handleAboutSection() {
   const aboutSection = nestGridContainer("section", 'about')
   const aboutSectionInner = util.firstChildRef(aboutSection)
   const fragment = document.createDocumentFragment()
-  
-  const name = util.createElementWithClass('h1', 'about__name', portfolioData.name)  
+
+  const name = util.createElementWithClass('h1', 'about__name', portfolioData.name)
   const wrapper = util.createElementWithClass('div', 'about__heading-wrapper')
+  const bioWrapper = util.createElementWithClass('div', 'about__bio')
   const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
   const cta = util.createElementWithClass('a', 'about__cta', portfolioData.cta.label)
-  const bio = util.createElementWithClass('p', 'about__bio', portfolioData.bio)
-  
+  const vote = util.createElementWithClass('a', 'about__cta', portfolioData.vote.label)
+  const bio = util.createElementWithClass('p', 'about__info', portfolioData.bio)
+
   cta.setAttribute('href', portfolioData.cta.href)
+  vote.setAttribute('href', portfolioData.vote.href)
   wrapper.appendChild(heading)
   wrapper.appendChild(cta)
+  bioWrapper.appendChild(wrapper)
+  bioWrapper.appendChild(bio)
+  bioWrapper.appendChild(vote)
+  fragment.append(name, bioWrapper)
 
-  fragment.append(name, wrapper, bio)
-  
-  
+
   const currently = handleCurrentlyLists()
   for (list of currently) {
     fragment.appendChild(list)
   }
-  
+
   const techLists = handleTechnologyLists()
   for (list of techLists) {
     fragment.appendChild(list)
   }
-  
+
   aboutSectionInner.appendChild(fragment)
   return aboutSection
 }
@@ -71,16 +76,16 @@ function handleProject(project) {
   const image = util.createElementWithClass('img', 'project__image')
   image.src = project.image.src
   image.alt = project.image.alt
-  
+
   const imageWrapper = util.createElementWithClass('div', 'project__image-wrapper')
   imageWrapper.appendChild(image)
 
   const git = util.createElementWithClass('a', 'project__link', 'git')
   git.setAttribute('href', project.links.git)
-  
+
   const live = util.createElementWithClass('a', 'project__link', 'live')
   live.setAttribute('href', project.links.live)
-  
+
   const linkWrapper = util.createElementWithClass('div', 'project__link-wrapper')
   linkWrapper.appendChild(git)
   linkWrapper.appendChild(live)
@@ -99,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
   main.appendChild(aboutSection)
 
   const projects = portfolioData.projects.map(handleProject)
-  for(project of projects){
+  for (project of projects) {
     main.appendChild(project)
   }
 });
