@@ -6,10 +6,13 @@ html {
   /* background: linear-gradient(wheat, ivory); */
 }
 
+noscript {
+  position: relative;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 body::before {
   position: fixed;
