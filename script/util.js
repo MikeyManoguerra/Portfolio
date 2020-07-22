@@ -6,6 +6,7 @@ const util = (function () {
     return createElementWithClass('li', `${classPrefix}list-item`, text)
   }
 
+  //  takes an array of strings and inserts them into a list
   function createSimpleList(array, classPrefix) {
     const ul = document.createElement('ul')
     ul.setAttribute('class', `${classPrefix}list`)
@@ -26,11 +27,12 @@ const util = (function () {
     return ul
   }
 
+
   function createElementWithClass(type, className='', text='') {
     const el = document.createElement(type)
     if(className) el.setAttribute('class', className)
     if(text) el.innerText = text
-    
+
     return el
   }
 

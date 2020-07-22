@@ -3,11 +3,11 @@ const portfolioData = (function loadData() {
     name: "Michael Manoguerra",
     heading: "This site is built dynamically with vanilla javascript. It's a work in progress!",
     cta: {
-      label: 'follow along here!',
+      label: 'follow along',
       href: 'https://www.github.com/mikeymanoguerra/portfolio'
     },
     vote: {
-      label: 'Register To Vote',
+      label: 'Register To Vote!',
       href: 'https://vote.gov/'
     },
     bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems.",
@@ -129,7 +129,7 @@ const portfolioData = (function loadData() {
       },
       {
         heading: "Prevention Point Reporting System",
-        description: "Code for Philly Project",
+        description: "Full Stack Open Source Project, a partnership between Code for Philly and Prevention Point Philadelphia. I am a long time contributor, and now one of the project leads for this application. It combines a Django REST Framework backend with a React/Mobx frontend. It is dockerized, and data is persisted in a PosgresQL database.",
         image: {
           src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1592673102/ppp-screen.png",
           alt: "screenshot of CLI terminal"

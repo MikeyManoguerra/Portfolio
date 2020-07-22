@@ -3,7 +3,12 @@ html {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #2a2e32;
-  /* background: linear-gradient(wheat, ivory); */
+}
+
+:root {
+  --grey: #2a2e32;
+  --purple: #965d5d;
+  --serif: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 noscript {
@@ -20,11 +25,7 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background:
-  repeating-linear-gradient(to right,  transparent, 120px, #efcdcd 120px, #efcdcd 121px),
-  repeating-linear-gradient(  transparent, 120px, #efcdcd 120px, #efcdcd 121px),
-  linear-gradient(#efcdcd, #fdfdf5)
-  ;
+  background: repeating-linear-gradient(to right, transparent, 120px, #efcdcd 120px, #efcdcd 121px), repeating-linear-gradient( transparent, 120px, #efcdcd 120px, #efcdcd 121px), linear-gradient(#efcdcd, #fdfdf5);
   content: '';
 }
 

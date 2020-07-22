@@ -38,16 +38,16 @@ function handleAboutSection() {
   const bioWrapper = util.createElementWithClass('div', 'about__bio')
   const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
   const cta = util.createElementWithClass('a', 'about__cta', portfolioData.cta.label)
-  const vote = util.createElementWithClass('a', 'about__cta', portfolioData.vote.label)
+  const vote = util.createElementWithClass('a', 'about__vote', portfolioData.vote.label)
   const bio = util.createElementWithClass('p', 'about__info', portfolioData.bio)
 
   cta.setAttribute('href', portfolioData.cta.href)
   vote.setAttribute('href', portfolioData.vote.href)
   wrapper.appendChild(heading)
   wrapper.appendChild(cta)
-  bioWrapper.appendChild(wrapper)
   bioWrapper.appendChild(bio)
   bioWrapper.appendChild(vote)
+  bioWrapper.appendChild(wrapper)
   fragment.append(name, bioWrapper)
 
 
