@@ -43,6 +43,7 @@ function handleAboutSection() {
 
   cta.setAttribute('href', portfolioData.cta.href)
   vote.setAttribute('href', portfolioData.vote.href)
+  vote.setAttribute('id', 'register-to-vote')
   wrapper.appendChild(heading)
   wrapper.appendChild(cta)
   bioWrapper.appendChild(bio)

@@ -12,7 +12,9 @@ html {
 }
 
 noscript {
+  display: block;
   position: relative;
+  padding: 25px;
 }
 
 *, *:before, *:after {
