@@ -68,6 +68,26 @@ const portfolioData = (function loadData() {
     },
     projects: [
       {
+        heading: "Stitch By Michelle",
+        description: "Near MVP Headless Content Management System Site for a local seamstress. Custom Designed reusable components generate into a JamStack site",
+        image: {
+          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1595708651/stitch.png",
+          alt: 'site screenshot'
+        },
+        links: {
+          git: null,
+          live: "https:/\/stitch-by-michelle.netlify.app/"
+        },
+        technologies: [
+          "vue composition api",
+          "graphQl",
+          "jamstack",
+          "gridsome",
+          "netlify CMS",
+          "SCSS"
+        ]
+      },
+      {
         heading: "Knowledge Maze",
         description: "MERN stack application with Redux. Build a customizable decision based story and share with others. Pointer based system allows for unique configurations.",
         image: {
@@ -111,22 +131,7 @@ const portfolioData = (function loadData() {
           "Digital Ocean"
         ]
       },
-      {
-        "heading": "P5 Examples",
-        "description": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
-        "image": {
-          "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1588342577/treesp5.png",
-          "alt": " screenshot of tree animation"
-        },
-        "links": {
-          "git": "https:/\/github.com/MikeyManoguerra/p5-hosted-example",
-          "live": "https://mikeymanoguerra.github.io/p5-hosted-example/"
-        },
-        "technologies": [
-          "p5js",
-          "Git GUI"
-        ]
-      },
+
       {
         heading: "Prevention Point Reporting System",
         description: "Full Stack Open Source Project, a partnership between Code for Philly and Prevention Point Philadelphia. I am a long time contributor, and now one of the project leads for this application. It combines a Django REST Framework backend with a React/Mobx frontend. It is dockerized, and data is persisted in a PosgresQL database.",
@@ -146,26 +151,19 @@ const portfolioData = (function loadData() {
         ]
       },
       {
-        heading: "Friday Night Knowledge",
-        description: "MERN stack application using a spaced repetition alogrithm to teach foreign languages. Resuable system makes it relatively easy to add new subjects.",
-        image: {
-          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555616756/new-friday.png",
-          alt: ''
+        "heading": "P5 Examples",
+        "description": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
+        "image": {
+          "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1588342577/treesp5.png",
+          "alt": " screenshot of tree animation"
         },
-        links: {
-          git: "https:/\/github.com/MikeyManoguerra/spaced-repetition-project",
-          live: "https:/\/friday-night-knowledge.netlify.com/"
+        "links": {
+          "git": "https:/\/github.com/MikeyManoguerra/p5-hosted-example",
+          "live": "https://mikeymanoguerra.github.io/p5-hosted-example/"
         },
-        technologies: [
-          "React",
-          "Redux",
-          "Redux Form",
-          "Node",
-          "Express",
-          "MongoDB",
-          "Mongoose",
-          "Mocha",
-          "Chai"
+        "technologies": [
+          "p5js",
+          "Git GUI"
         ]
       }
     ]

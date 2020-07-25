@@ -74,22 +74,28 @@ function handleProject(project) {
   const heading = util.createElementWithClass('h2', 'project__heading', project.heading)
   const copy = util.createElementWithClass('p', 'project__copy', project.description)
 
+  const { src, alt } = project.image
   const image = util.createElementWithClass('img', 'project__image')
-  image.src = project.image.src
-  image.alt = project.image.alt
+  image.src = src
+  image.alt = alt
 
   const imageWrapper = util.createElementWithClass('div', 'project__image-wrapper')
   imageWrapper.appendChild(image)
 
-  const git = util.createElementWithClass('a', 'project__link', 'git')
-  git.setAttribute('href', project.links.git)
-
-  const live = util.createElementWithClass('a', 'project__link', 'live')
-  live.setAttribute('href', project.links.live)
-
   const linkWrapper = util.createElementWithClass('div', 'project__link-wrapper')
-  linkWrapper.appendChild(git)
-  linkWrapper.appendChild(live)
+  const { git, live } = project.links
+
+  if (git) {
+    const gitLink = util.createElementWithClass('a', 'project__link', 'git')
+    gitLink.setAttribute('href', git)
+    linkWrapper.appendChild(gitLink)
+  }
+
+  if (live) {
+    const liveLink = util.createElementWithClass('a', 'project__link', 'live')
+    liveLink.setAttribute('href', live)
+    linkWrapper.appendChild(liveLink)
+  }
 
   projectArticleInner.appendChild(heading)
   projectArticleInner.appendChild(copy)
