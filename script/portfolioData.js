@@ -69,7 +69,7 @@ const portfolioData = (function loadData() {
     projects: [
       {
         heading: "Stitch By Michelle",
-        description: "Near MVP Headless Content Management System Site for a local seamstress. Custom Designed reusable components generate into a JamStack site",
+        description: "Near MVP Headless Content Management System Site for a local seamstress. A Jamstack site with custom designed reusable components built with vue, Gridsome, and Netlify CMS",
         image: {
           src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1595708651/stitch.png",
           alt: 'site screenshot'
