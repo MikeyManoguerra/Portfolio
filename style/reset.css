@@ -9,6 +9,7 @@ html {
   --grey: #2a2e32;
   --purple: #965d5d;
   --serif: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  --blue: #cdd3ef;
 }
 
 noscript {
@@ -27,7 +28,10 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: repeating-linear-gradient(to right, transparent, 120px, #efcdcd 120px, #efcdcd 121px), repeating-linear-gradient( transparent, 120px, #efcdcd 120px, #efcdcd 121px), linear-gradient(#efcdcd, #fdfdf5);
+  background:
+    repeating-linear-gradient(to right, transparent, 120px, var(--blue) 120px, var(--blue) 121px),
+    repeating-linear-gradient( transparent, 120px, var(--blue) 120px, var(--blue) 121px),
+    linear-gradient(var(--blue), #fdfdf5);
   content: '';
 }
 
