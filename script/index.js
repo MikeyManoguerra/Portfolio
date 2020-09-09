@@ -37,15 +37,20 @@ function handleAboutSection() {
   const wrapper = util.createElementWithClass('div', 'about__heading-wrapper')
   const bioWrapper = util.createElementWithClass('div', 'about__bio')
   const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
-  const cta = util.createElementWithClass('a', 'about__cta', portfolioData.cta.label)
+
   const vote = util.createElementWithClass('a', 'about__vote', portfolioData.vote.label)
   const bio = util.createElementWithClass('p', 'about__info', portfolioData.bio)
 
-  cta.setAttribute('href', portfolioData.cta.href)
   vote.setAttribute('href', portfolioData.vote.href)
   vote.setAttribute('id', 'register-to-vote')
   wrapper.appendChild(heading)
-  wrapper.appendChild(cta)
+  const innerWrapper = util.createElementWithClass('div', 'about__heading-wrapper-inner')
+  portfolioData.ctas.forEach(cta => {
+    const a = util.createElementWithClass('a', 'about__cta', cta.label)
+    a.setAttribute('href', cta.href)
+    innerWrapper.appendChild(a)
+  })
+  wrapper.appendChild(innerWrapper)
   bioWrapper.appendChild(bio)
   bioWrapper.appendChild(vote)
   bioWrapper.appendChild(wrapper)

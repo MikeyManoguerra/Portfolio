@@ -1,11 +1,25 @@
 const portfolioData = (function loadData() {
   return {
     name: "Michael Manoguerra",
-    heading: "This site is built dynamically with vanilla javascript. It's a work in progress!",
-    cta: {
-      label: 'follow along',
-      href: 'https://www.github.com/mikeymanoguerra/portfolio'
-    },
+    heading: "Here's where you can find me across the web:",
+    ctas: [
+      {
+        label: 'github',
+        href: 'https://www.github.com/mikeymanoguerra/'
+      },
+      {
+        label: 'twitter',
+        href: 'https://twitter.com/mikeymanoguerra/'
+      },
+      {
+        label: 'codepen',
+        href: 'https://codepen.io/mikeymanoguerra/'
+      },
+      {
+        label: 'linkedin',
+        href: 'https://www.linkedin.com/in/mikey-manoguerra/'
+      }
+    ],
     vote: {
       label: 'Register To Vote!',
       href: 'https://vote.gov/'
