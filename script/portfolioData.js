@@ -10,9 +10,17 @@ const portfolioData = (function loadData() {
       label: 'Register To Vote!',
       href: 'https://vote.gov/'
     },
-    bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems.",
+    bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems. I enjoy working hard and putting my all into things I believe in. I am an easy going guy overall.",
     currently: {
       positions: [
+        {
+          location: "Looking for a Full Time Role",
+          description: "Lets talk about how I can help you!"
+        },
+        {
+          location: "Freelance Developer",
+          description: "Contracting jobs with Pandas and Vue"
+        },
         {
           location: "Boxplot Analytics",
           description: "application developer"
@@ -21,8 +29,12 @@ const portfolioData = (function loadData() {
       other: [
         {
           location: "Code For Philly",
+          description: "Developer Mentor for Code for Philly Fellowship"
+        },
+        {
+          location: "Code For Philly",
           description: "Tech lead for Prevention Point Project"
-        }
+        },
       ]
     },
     technologies: {
@@ -31,7 +43,7 @@ const portfolioData = (function loadData() {
         "gsap",
         "react",
         "redux",
-        "vue 3",
+        "vue.js",
         "layouts",
         "webpack",
         "web apis",
@@ -43,6 +55,7 @@ const portfolioData = (function loadData() {
       backend: [
         "node",
         "python",
+        "flask",
         "django",
         "express",
         "mongodb",
@@ -58,12 +71,12 @@ const portfolioData = (function loadData() {
         "heroku",
         "netlify",
         "debugger",
-        "cli tools"
+        "cli tools",
+        "regex",
+        "pandas"
       ],
       experienced: [
-        "regex",
-        "flask",
-        "pandas"
+
       ]
     },
     projects: [

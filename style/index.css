@@ -10,18 +10,20 @@
   padding-bottom: 20px;
   margin: 0 auto;
   max-width: 1200px;
-  grid-template-areas: "name" "bio" "position" "other" "list1" "list2" "list3" "list4";
+  grid-template-areas: "name" "bio" "position" "other" "list1" "list2" "list3";
 }
 
 @media(min-width: 600px) {
   .about__inner {
-    grid-template-areas: "name name" "bio bio" "position other" "list1 list2" "list3 list4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name name" "bio bio" "position other" "list1 list2" "list3 .";
   }
 }
 
 @media(min-width: 1000px) {
   .about__inner {
-    grid-template-areas: "name name name name" "bio bio bio bio" "position other . ." "list1 list2 list3 list4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "name name name" "bio bio bio" "position other . " "list1 list2 list3";
   }
 }
 
@@ -78,32 +80,28 @@
 
 .about__frontend-list {
   grid-area: list1;
-  padding: 20px 0;
+  padding: 20px ;
 }
 
 .about__backend-list {
   grid-area: list2;
-  padding: 20px 0;
+  padding: 20px ;
 }
 
 .about__developer-list {
   grid-area: list3;
-  padding: 20px 0;
-}
-
-.about__experienced-list {
-  grid-area: list4;
-  padding: 20px 0;
+  padding: 20px ;
 }
 
 .about__positions-list {
   grid-area: position;
-  padding: 20px 0;
+  padding: 20px;
 }
 
-.about__positions-list-item {
+.about__positions-list-item, .about__other-list-item {
   margin-bottom: 20px;
 }
+
 
 .about__positions-list-item>p:first-child, .about__other-list-item>p:first-child {
   font-weight: bold;
@@ -111,7 +109,7 @@
 
 .about__other-list {
   grid-area: other;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .project {
