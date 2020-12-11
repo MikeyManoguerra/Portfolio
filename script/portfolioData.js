@@ -20,16 +20,13 @@ const portfolioData = (function loadData() {
         href: 'https://www.linkedin.com/in/mikey-manoguerra/'
       }
     ],
-    vote: {
-      label: 'Register To Vote!',
-      href: 'https://vote.gov/'
-    },
+
     bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems. I enjoy working hard and putting my all into things I believe in. I am an easy going guy overall.",
     currently: {
       positions: [
         {
-          location: "Looking for a Full Time Role",
-          description: "Lets talk about how I can help you!"
+          location: "Houwzer",
+          description: "Front End Software Engineer"
         },
         {
           location: "Freelance Developer",
