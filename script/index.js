@@ -38,11 +38,9 @@ function handleAboutSection() {
   const bioWrapper = util.createElementWithClass('div', 'about__bio')
   const heading = util.createElementWithClass('h2', 'about__heading', portfolioData.heading)
 
-  const vote = util.createElementWithClass('a', 'about__vote', portfolioData.vote.label)
+
   const bio = util.createElementWithClass('p', 'about__info', portfolioData.bio)
 
-  vote.setAttribute('href', portfolioData.vote.href)
-  vote.setAttribute('id', 'register-to-vote')
   wrapper.appendChild(heading)
   const innerWrapper = util.createElementWithClass('div', 'about__heading-wrapper-inner')
   portfolioData.ctas.forEach(cta => {
@@ -52,7 +50,6 @@ function handleAboutSection() {
   })
   wrapper.appendChild(innerWrapper)
   bioWrapper.appendChild(bio)
-  bioWrapper.appendChild(vote)
   bioWrapper.appendChild(wrapper)
   fragment.append(name, bioWrapper)
 
