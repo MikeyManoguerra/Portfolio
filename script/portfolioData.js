@@ -17,7 +17,7 @@ const portfolioData = (function loadData() {
       },
       {
         label: 'linkedin',
-        href: 'https://www.linkedin.com/in/mikey-manoguerra/'
+        href: 'https://www.linkedin.com/in/mlcwlomtamlzujmczryr/'
       }
     ],
 
