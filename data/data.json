@@ -3,35 +3,23 @@
   "currently": {
     "positions": [
       {
-        "location": "160over90",
-        "position": "jr web developer"
-      },
-      {
-        "location": "Boxplot Analytics",
-        "postion": "application developer"
+        "location": "Houwzer Inc (Newfound Group)",
+        "position": "Full Stack Software Engineer"
       }
     ],
     "other": [
-      {
-        "location": "Code For Philly",
-        "description": "unified reporting system for Prevention Point",
-        "link": {
-          "href": "https://www.github.com/codeforphilly/prevention-point",
-          "label": "learn more"
-        }
-      }
     ]
   },
   "technologies": {
     "frontend": [
-      "sass",
+      "scss",
       "gsap",
       "react",
       "redux",
-      "vue 3",
-      "layouts",
-      "webpack",
-      "web apis",
+      "rxjs",
+      "angular 7-15",
+      "karma test framework",
+      "browser apis",
       "typescript",
       "responsive design",
       "semantic, accessible, html",
@@ -42,10 +30,10 @@
       "python",
       "express",
       "mongodb",
-      "passport",
       "postresQL",
+      "ActiveRecord",
+      "Ruby on Rails",
       "django (base)",
-      "docker-compose",
       "REST Architecture",
       "django rest framework"
     ],

@@ -2,14 +2,9 @@ const portfolioData = (function loadData() {
   return {
     name: "Michael Manoguerra",
     heading: "Here's where you can find me across the web:",
-    ctas: [
-      {
+    ctas: [{
         label: 'github',
         href: 'https://www.github.com/mikeymanoguerra/'
-      },
-      {
-        label: 'twitter',
-        href: 'https://twitter.com/mikeymanoguerra/'
       },
       {
         label: 'codepen',
@@ -18,27 +13,19 @@ const portfolioData = (function loadData() {
       {
         label: 'linkedin',
         href: 'https://www.linkedin.com/in/mlcwlomtamlzujmczryr/'
+      },
+      {
+        label: 'instagram',
+        href: 'https://www.instagram.com/entropyparty/'
       }
     ],
-
     bio: "Teaching has taught me how important it is to explain things clearly. I value well organized directory systems. I enjoy working hard and putting my all into things I believe in. I am an easy going guy overall.",
     currently: {
-      positions: [
-        {
-          location: "Houwzer",
-          description: "Front End Software Engineer"
-        },
-        {
-          location: "Freelance Developer",
-          description: "Contracting jobs with Pandas and Vue"
-        },
-        {
-          location: "Boxplot Analytics",
-          description: "application developer"
-        }
-      ],
-      other: [
-        {
+      positions: [{
+        location: "Houwzer",
+        description: "Full Stack Software Engineer"
+      }, ],
+      other: [{
           location: "Code For Philly",
           description: "Developer Mentor for Code for Philly Fellowship"
         },
@@ -50,29 +37,28 @@ const portfolioData = (function loadData() {
     },
     technologies: {
       frontend: [
-        "sass",
+        "scss",
         "gsap",
         "react",
         "redux",
-        "vue.js",
-        "layouts",
-        "webpack",
-        "web apis",
+        "rxjs",
+        "angular 7-15",
+        "karma test framework",
+        "browser apis",
         "typescript",
         "responsive design",
         "semantic, accessible, html",
         "asyncronous ES6 + javascript"
       ],
-      backend: [
+      "backend": [
         "node",
         "python",
-        "flask",
-        "django",
         "express",
         "mongodb",
-        "passport",
         "postresQL",
-        "docker-compose",
+        "ActiveRecord",
+        "Ruby on Rails",
+        "django (base)",
         "REST Architecture",
         "django rest framework"
       ],
@@ -90,8 +76,7 @@ const portfolioData = (function loadData() {
 
       ]
     },
-    projects: [
-      {
+    projects: [{
         heading: "Stitch By Michelle",
         description: "Near MVP Headless Content Management System Site for a local seamstress. A Jamstack site with custom designed reusable components built with vue, Gridsome, and Netlify CMS",
         image: {
@@ -112,26 +97,33 @@ const portfolioData = (function loadData() {
         ]
       },
       {
-        heading: "Knowledge Maze",
-        description: "MERN stack application with Redux. Build a customizable decision based story and share with others. Pointer based system allows for unique configurations.",
+        heading: "Random String Generator",
+        description: "Create a randomized string for passwords, or other uses of randomized characters. Uses the browser's Crypto Api for true randomness. Think about Wilco's song Random Name Generator as you are using it.",
         image: {
-          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1569336781/Screen_Shot_2019-09-24_at_10.51.33.png",
-          alt: "screenshot of D3 tool in app"
+          src: "assets/rsg.png",
+          alt: "screenshot of random generated result"
         },
         links: {
-          git: "https:/\/github.com/MikeyManoguerra/decision-trees",
-          live: "https:/\/agitated-murdock-a299b6.netlify.com"
+          git: "https://github.com/MikeyManoguerra/random-string-generator",
+          live: "https:/\/mikeymanoguerra.github.io/random-string-generator/"
         },
         technologies: [
-          "React",
-          "Redux",
-          "Redux Form",
-          "React Router",
-          "D3 Cytoscape",
-          "JWT",
-          "Express",
-          "NodeJS",
-          "MongoDB "
+          "crypto API"
+        ]
+      },
+      {
+        heading: "CSS Art",
+        description: "Pure CSS art, each done in a single session of 1-4 hours. Learned many details and eccentricities of CSS, and I would credit this series in solidifying my general knowledge of available CSS properties.",
+        image: {
+          src: "assets/fan.png",
+          alt: "screenshot of css box fan"
+        },
+        links: {
+          git: "https://github.com/MikeyManoguerra/css-art",
+          live: "https:/\/mikeymanoguerra.github.io/css-art/"
+        },
+        technologies: [
+          "crypto API"
         ]
       },
       {
@@ -155,25 +147,6 @@ const portfolioData = (function loadData() {
           "Digital Ocean"
         ]
       },
-
-      {
-        heading: "Prevention Point Reporting System",
-        description: "Full Stack Open Source Project, a partnership between Code for Philly and Prevention Point Philadelphia. I am a long time contributor, and now one of the project leads for this application. It combines a Django REST Framework backend with a React/Mobx frontend. It is dockerized, and data is persisted in a PosgresQL database.",
-        image: {
-          src: "https://res.cloudinary.com/dgzjr8afn/image/upload/v1592673102/ppp-screen.png",
-          alt: "screenshot of CLI terminal"
-        },
-        links: {
-          git: "https:/\/github.com/CodeforPhilly/prevention-point",
-          live: null
-        },
-        technologies: [
-          "Django REST Framework",
-          "React",
-          "Mobx",
-          "Docker"
-        ]
-      },
       {
         "heading": "P5 Examples",
         "description": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
@@ -190,6 +163,18 @@ const portfolioData = (function loadData() {
           "Git GUI"
         ]
       }
-    ]
+    ],
+    // extras: {
+    //   heading: 'Extras',
+    //   description: 'Projects that don\'t deserve to be featured, but do deserve to be somewhere.',
+    //   collection: [
+    //     {
+    //       href: 'example.com',
+    //       text: 'test',
+    //       description: 'yep'
+    //     }
+
+    //   ]
+    // }
   }
 })();
